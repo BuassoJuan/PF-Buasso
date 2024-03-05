@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+header {
+    background-color: rgb(169, 105, 105);
+    height: 80px;
+    padding: 20px;
+}
+
+
+main section {
+    width: 100%;
+    height: 50%;
+}
+
+
+footer {
+    background-color: rgb(169, 105, 105);
+    text-align: center;
+    padding: 30px;
+    font-size: 25px;
+}
+
+footer .redes a {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer .redes i {
+
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 50px;
+    color: black;
+}
+
+.redes i:hover {
+    transform: translate(-3px) scale(1.05);
+}
+
+footer p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.container-item {
+    max-width: 100%;
+    justify-content: center;
+}
+
+.container-item {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+}
+
+.sweater1 {
+    border-radius: 10px;
+}
+
+.sweater1:hover {
+    box-shadow: 0 10px 20px rgb(169, 105, 105);
+}
+
+article .sweater1 {
+    overflow: hidden;
+}
+
+.sweater1 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.sweater1:hover img {
+    transform: scale(1.1);
+}
+
+.info-producto{
+    align-items: center;
+    align-content: center;
+}
+
+.botones {
+    align-content: center;
+    border: none;
+    background: none;
+    border-radius: 15%;
+    background-color: rgb(169, 105, 105);
+    padding: 10px 10px;
+}
