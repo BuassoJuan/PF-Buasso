@@ -10,6 +10,9 @@ header {
     padding: 20px;
 }
 
+.nav-link.active {
+    color: white;
+}
 
 main section {
     width: 100%;
