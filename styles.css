@@ -4,12 +4,36 @@
     box-sizing: 0;
 }
 
+/* INDEX - HEADER Y FOOTER */
+
 header {
     background-color: rgb(169, 105, 105);
     height: 80px;
     padding: 20px;
 }
 
+.custom-text-color {
+    color: black; 
+}
+
+.custom-text-color:hover {
+    color: white
+}
+
+.custom-toggler{
+    background-color: rgb(169, 105, 105);
+    border-color: black;
+}
+
+.custom-toggler:hover{
+    color: black;
+}
+
+
+
+.color-logo{
+    color: black;
+}
 
 main section {
     width: 100%;
@@ -39,6 +63,7 @@ footer .redes i {
 
 .redes i:hover {
     transform: translate(-3px) scale(1.05);
+    color: white;
 }
 
 footer p {
@@ -46,9 +71,12 @@ footer p {
     text-align: center;
 }
 
+/* TIENDA */
+
 .container-item {
     max-width: 100%;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .container-item {
@@ -71,7 +99,7 @@ article .sweater1 {
 
 .sweater1 img {
     width: 100%;
-    height: 250px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
@@ -81,10 +109,10 @@ article .sweater1 {
     transform: scale(1.1);
 }
 
-.info-producto{
-    align-items: center;
-    align-content: center;
+article h2{
+    text-align: center;
 }
+
 
 .botones {
     align-content: center;
@@ -94,6 +122,12 @@ article .sweater1 {
     background-color: rgb(169, 105, 105);
     padding: 10px 10px;
 }
+
+button .botones{
+    align-items: center;
+    padding: 20px;
+}
+
 
 /* CONTACTO */
 
