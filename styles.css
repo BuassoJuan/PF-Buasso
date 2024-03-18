@@ -129,9 +129,110 @@ button .botones{
 }
 
 
-/* CONTACTO */
 
-/* LAVADO */
 
 /* QUIENES SOMOS */
 
+.sobre-nosotros{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.sobre-nosotros h1{
+    font-size: 50px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.sobre-nosotros h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(169, 105, 105);
+}
+
+.sobre-nosotros p{
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.sobre-nosotros-2{
+    width: 90%;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.texto-sobre-nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foto-sobre-nosotros{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.foto-sobre-nosotros img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+transition: 0.5s ease;
+}
+
+.foto-sobre-nosotros:hover img{
+    transform: scale(1.2);
+}
+
+.nosotros-contenido{
+    flex: 1;
+}
+
+.nosotros-contenido h2{
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 15px;
+    }
+
+    .nosotros-contenido p{
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .leer-mas{
+display: inline-block;
+color: black;
+padding: 10px 20px;
+background-color: rgb(217, 163, 163);
+font-size: 19px;
+text-decoration: none;
+border: 25px;
+margin-top: 15px;
+transition: 0.3s ease;
+
+}
+
+.leer-mas:hover{
+    background-color: rgb(169, 105, 105);
+color: white;
+}
+
+/* LAVADO */
+
+.img-fondo-lavado{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* CONTACTO */
