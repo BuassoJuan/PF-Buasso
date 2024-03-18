@@ -13,25 +13,25 @@ header {
 }
 
 .custom-text-color {
-    color: black; 
+    color: black;
 }
 
 .custom-text-color:hover {
     color: white
 }
 
-.custom-toggler{
+.custom-toggler {
     background-color: rgb(169, 105, 105);
     border-color: black;
 }
 
-.custom-toggler:hover{
+.custom-toggler:hover {
     color: black;
 }
 
 
 
-.color-logo{
+.color-logo {
     color: black;
 }
 
@@ -109,7 +109,7 @@ article .sweater1 {
     transform: scale(1.1);
 }
 
-article h2{
+article h2 {
     text-align: center;
 }
 
@@ -123,7 +123,7 @@ article h2{
     padding: 10px 10px;
 }
 
-button .botones{
+button .botones {
     align-items: center;
     padding: 20px;
 }
@@ -133,7 +133,7 @@ button .botones{
 
 /* QUIENES SOMOS */
 
-.sobre-nosotros{
+.sobre-nosotros {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -143,13 +143,13 @@ button .botones{
     margin: 20px auto;
 }
 
-.sobre-nosotros h1{
+.sobre-nosotros h1 {
     font-size: 50px;
     margin-bottom: 25px;
     position: relative;
 }
 
-.sobre-nosotros h1::after{
+.sobre-nosotros h1::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -159,80 +159,147 @@ button .botones{
     background-color: rgb(169, 105, 105);
 }
 
-.sobre-nosotros p{
+.sobre-nosotros p {
     font-size: 18px;
     margin-bottom: 35px;
 }
 
-.sobre-nosotros-2{
+.sobre-nosotros-2 {
     width: 90%;
     margin: auto;
     padding: 10px 20px;
 }
 
-.texto-sobre-nosotros{
+.texto-sobre-nosotros {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.foto-sobre-nosotros{
+.foto-sobre-nosotros {
     flex: 1;
     margin-right: 40px;
     overflow: hidden;
 }
 
-.foto-sobre-nosotros img{
+.foto-sobre-nosotros img {
     max-width: 100%;
     height: auto;
     display: block;
-transition: 0.5s ease;
+    transition: 0.5s ease;
 }
 
-.foto-sobre-nosotros:hover img{
+.foto-sobre-nosotros:hover img {
     transform: scale(1.2);
 }
 
-.nosotros-contenido{
+.nosotros-contenido {
     flex: 1;
 }
 
-.nosotros-contenido h2{
+.nosotros-contenido h2 {
     text-align: center;
     font-size: 23px;
     margin-bottom: 15px;
-    }
+}
 
-    .nosotros-contenido p{
-        font-size: 18px;
-        line-height: 1.5;
-    }
+.nosotros-contenido p {
+    font-size: 18px;
+    line-height: 1.5;
+}
 
-    .leer-mas{
-display: inline-block;
-color: black;
-padding: 10px 20px;
-background-color: rgb(217, 163, 163);
-font-size: 19px;
-text-decoration: none;
-border: 25px;
-margin-top: 15px;
-transition: 0.3s ease;
+.leer-mas {
+    display: inline-block;
+    color: black;
+    padding: 10px 20px;
+    background-color: rgb(217, 163, 163);
+    font-size: 19px;
+    text-decoration: none;
+    border: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
 
 }
 
-.leer-mas:hover{
+.leer-mas:hover {
     background-color: rgb(169, 105, 105);
-color: white;
+    color: white;
 }
 
 /* LAVADO */
 
-.img-fondo-lavado{
+.img-fondo-lavado {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 /* CONTACTO */
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+.container-form h2{
+    margin-bottom: 15px;
+    font: 25px;
+}
+
+.container-form p{
+    font-size: 15px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.container-form a{
+    font-size: 15px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 500;
+}
+
+.container-form a i{
+    color: rgb(169, 105, 105);
+    margin-left: 10px;
+}
+
+.container-form form .inputs, textarea{
+width: 100%;
+padding: 15px 10px;
+font-size: 15px;
+border: 1px solid  rgb(217, 163, 163);
+margin-bottom: 20px;
+border-radius: 3px;
+outline: 0px;
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form form .boton-enviar{
+    padding: 10px 20px;
+    font-size: 19px;
+    border-radius: 10px;
+    background: rgb(217, 163, 163);
+    border: 25px;
+    transition: 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.container-form form .boton-enviar:hover{
+background-color: rgb(169, 105, 105);
+    color: white;
+}
