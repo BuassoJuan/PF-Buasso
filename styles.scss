@@ -1,0 +1,272 @@
+$color_1: black;
+$color_2: white;
+$color_3: rgb(169, 105, 105);
+$background-color_1: rgb(169, 105, 105);
+$background-color_2: rgb(217, 163, 163);
+$border-color_1: black;
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: 0;
+}
+header {
+	background-color: $background-color_1;
+	height: 80px;
+	padding: 20px;
+}
+.custom-text-color {
+	color: $color_1;
+	&:hover {
+		color: $color_2;
+	}
+}
+.custom-toggler {
+	background-color: $background-color_1;
+	border-color: $border-color_1;
+	&:hover {
+		color: $color_1;
+	}
+}
+.color-logo {
+	color: $color_1;
+}
+main {
+	section {
+		width: 100%;
+		height: 50%;
+	}
+}
+footer {
+	background-color: $background-color_1;
+	text-align: center;
+	padding: 30px;
+	font-size: 25px;
+	.redes {
+		a {
+			text-align: center;
+			text-decoration: none;
+		}
+		i {
+			text-align: center;
+			font-size: 50px;
+			letter-spacing: 50px;
+			color: $color_1;
+		}
+	}
+	p {
+		margin-bottom: 25px;
+		text-align: center;
+	}
+}
+.redes {
+	i {
+		&:hover {
+			transform: translate(-3px) scale(1.05);
+			color: $color_2;
+		}
+	}
+}
+.container-item {
+	max-width: 100%;
+	justify-content: center;
+	margin-bottom: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 2fr);
+	gap: 10px;
+}
+.sweater1 {
+	border-radius: 10px;
+	&:hover {
+		box-shadow: 0 10px 20px rgb(169, 105, 105);
+		img {
+			transform: scale(1.1);
+		}
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 10px 10px 0 0;
+		transition: all .5s;
+	}
+}
+article {
+	.sweater1 {
+		overflow: hidden;
+	}
+	h2 {
+		text-align: center;
+	}
+}
+.botones {
+	align-content: center;
+	border: none;
+	background: none;
+	border-radius: 15%;
+	background-color: $background-color_2;
+	padding: 10px 10px;
+}
+button {
+	.botones {
+		align-items: center;
+		padding: 20px;
+	}
+}
+.sobre-nosotros {
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	margin: 20px auto;
+	h1 {
+		font-size: 50px;
+		margin-bottom: 25px;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			display: block;
+			margin: 0 auto;
+			background-color: $background-color_1;
+		}
+	}
+	p {
+		font-size: 18px;
+		margin-bottom: 35px;
+	}
+}
+.sobre-nosotros-2 {
+	width: 90%;
+	margin: auto;
+	padding: 10px 20px;
+}
+.texto-sobre-nosotros {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.foto-sobre-nosotros {
+	flex: 1;
+	margin-right: 40px;
+	overflow: hidden;
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		transition: 0.5s ease;
+	}
+	&:hover {
+		img {
+			transform: scale(1.2);
+		}
+	}
+}
+.nosotros-contenido {
+	flex: 1;
+	h2 {
+		text-align: center;
+		font-size: 23px;
+		margin-bottom: 15px;
+	}
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+	}
+}
+.leer-mas {
+	display: inline-block;
+	color: $color_1;
+	padding: 10px 20px;
+	background-color: $background-color_2;
+	font-size: 19px;
+	text-decoration: none;
+	border: 25px;
+	margin-top: 15px;
+	transition: 0.3s ease;
+	&:hover {
+		background-color: $background-color_1;
+		color: $color_2;
+	}
+}
+.img-fondo-lavado {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.container-form {
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	grid-gap: 50px;
+	margin-top: 90px;
+	h2 {
+		margin-bottom: 15px;
+		font: 25px;
+	}
+	p {
+		font-size: 15px;
+		line-height: 1.2;
+		margin-bottom: 30px;
+	}
+	a {
+		font-size: 15px;
+		display: inline-block;
+		text-decoration: none;
+		width: 100%;
+		margin-bottom: 15px;
+		color: $color_1;
+		font-weight: 500;
+		i {
+			color: $color_3;
+			margin-left: 10px;
+		}
+	}
+	form {
+		.inputs {
+			width: 100%;
+			padding: 15px 10px;
+			font-size: 15px;
+			border: 1px solid rgb(217, 163, 163);
+			margin-bottom: 20px;
+			border-radius: 3px;
+			outline: 0px;
+		}
+		textarea {
+			max-width: 530px;
+			min-width: 530px;
+			min-height: 140px;
+			max-height: 150px;
+		}
+		.boton-enviar {
+			padding: 10px 20px;
+			font-size: 19px;
+			border-radius: 10px;
+			background: rgb(217, 163, 163);
+			border: 25px;
+			transition: 0.3s ease;
+			margin-bottom: 50px;
+			&:hover {
+				background-color: $background-color_1;
+				color: $color_2;
+			}
+		}
+	}
+}
+textarea {
+	width: 100%;
+	padding: 15px 10px;
+	font-size: 15px;
+	border: 1px solid rgb(217, 163, 163);
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+}
