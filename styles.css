@@ -6,8 +6,11 @@
 
 header {
   background-color: rgb(169, 105, 105);
-  height: 80px;
   padding: 20px;
+}
+
+.bg-light{
+  background-color: rgb(169, 105, 105) !important;
 }
 
 .custom-text-color {

@@ -13,8 +13,10 @@ $border-color_1: black;
 }
 header {
 	background-color: $background-color_1;
-	height: 80px;
 	padding: 20px;
+}
+.bg-light {
+	background-color:  $background-color_1 !important;
 }
 .custom-text-color {
 	color: $color_1;
