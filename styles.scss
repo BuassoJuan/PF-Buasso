@@ -18,13 +18,13 @@ header {
 .bg-light {
 	background-color:  $background-color_1 !important;
 }
-.custom-text-color {
+.navbar-nav .nav-item:hover .nav-link {
 	color: $color_1;
 	&:hover {
 		color: $color_2;
 	}
 }
-.custom-toggler {
+.collapse .navbar-collapse {
 	background-color: $background-color_1;
 	border-color: $border-color_1;
 	&:hover {
@@ -109,6 +109,10 @@ article {
 	border-radius: 15%;
 	background-color: $background-color_2;
 	padding: 10px 10px;
+	&:hover {
+		background-color: $background-color_1;
+		color: $color_2;
+	}
 }
 button {
 	.botones {

@@ -9,22 +9,22 @@ header {
   padding: 20px;
 }
 
-.bg-light{
+.bg-light {
   background-color: rgb(169, 105, 105) !important;
 }
 
-.custom-text-color {
+.navbar-nav .nav-item:hover .nav-link {
   color: black;
 }
-.custom-text-color:hover {
+.navbar-nav .nav-item:hover .nav-link:hover {
   color: white;
 }
 
-.custom-toggler {
+.collapse .navbar-collapse {
   background-color: rgb(169, 105, 105);
   border-color: black;
 }
-.custom-toggler:hover {
+.collapse .navbar-collapse:hover {
   color: black;
 }
 
@@ -103,6 +103,10 @@ article h2 {
   border-radius: 15%;
   background-color: rgb(217, 163, 163);
   padding: 10px 10px;
+}
+.botones:hover {
+  background-color: rgb(169, 105, 105);
+  color: white;
 }
 
 button .botones {
