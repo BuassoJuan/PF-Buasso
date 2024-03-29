@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +8,7 @@
 header {
   background-color: rgb(169, 105, 105);
   padding: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .bg-light {
@@ -42,6 +44,7 @@ footer {
   text-align: center;
   padding: 30px;
   font-size: 25px;
+  font-family: "Open Sans", sans-serif;
 }
 footer .redes a {
   text-align: center;
@@ -112,6 +115,39 @@ article h2 {
 button .botones {
   align-items: center;
   padding: 20px;
+}
+
+.imagen-fondo-lavado {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(/imgs/fondo-borgoña2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-lavado {
+  color: white;
+  text-align: center;
+  width: 65%;
+}
+
+.titulo1 {
+  margin-bottom: 60px;
+}
+
+.titulo2 {
+  margin-bottom: 60px;
+}
+
+.titulo3 {
+  margin-bottom: 60px;
+}
+
+.titulo4 {
+  margin-bottom: 60px;
 }
 
 .sobre-nosotros {
@@ -197,12 +233,6 @@ button .botones {
 .leer-mas:hover {
   background-color: rgb(169, 105, 105);
   color: white;
-}
-
-.img-fondo-lavado {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
 }
 
 .container-form {
